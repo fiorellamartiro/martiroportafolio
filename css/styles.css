@@ -4413,3 +4413,21 @@ img.u-pull-left {
 .boxing {
   margin: 0 30px 20px 30px;
 }
+
+@media screen and (max-width: 1080px) {
+  #about-img {
+    display: none;
+  }
+  #about-title{
+    text-align: center;
+    margin-left: -8rem !important;
+    margin-bottom: -10px;
+  }
+  .folio-list__item{
+    max-width: 300px;
+
+  }
+  #home{
+    margin: 20px;
+  }
+}
