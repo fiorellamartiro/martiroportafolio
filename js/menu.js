@@ -3,12 +3,11 @@
  *
  * ------------------------------------------------------------------- */
 
-(function(html) {
-
+(function (html) {
   "use strict";
-  html.className = html.className.replace(/\bno-js\b/g, '') + ' js ';
+  html.className = html.className.replace(/\bno-js\b/g, "") + " js ";
 
-   //htmml document variables object
+  //htmml document variables object
   var dom_obj = {
     about: document.getElementById("menu-about"),
     about_section: document.getElementById("about"),
@@ -18,8 +17,8 @@
     text: document.getElementById("cmd"),
   };
 
-   /* Text change animation and functionality
-    * -------------------------------------------------- */
+  /* Text change animation and functionality
+   * -------------------------------------------------- */
 
   //About section start
   function change_text_about_on() {
@@ -55,7 +54,7 @@
   }
 
   function change_text_work_off() {
-    dom_obj.work.innerHTML = "a UX/UI Developer";
+    dom_obj.work.innerHTML = "a Frontend Engineer";
     dom_obj.work.style.color = "white";
     dom_obj.work.classList.remove("mune_btn");
   }
@@ -94,8 +93,8 @@
 
   //Contact section end
 
-   /* Typying header functionality
-    * -------------------------------------------------- */
+  /* Typying header functionality
+   * -------------------------------------------------- */
   //Text to change
   var _CONTENT = [
     "print('Hello world!')",
@@ -164,6 +163,4 @@
 
   //Start the typing effect on load
   _INTERVAL_VAL = setInterval(Type, 100);
-
-  
 })(document.documentElement);
